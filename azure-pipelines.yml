@@ -25,3 +25,4 @@ steps:
   inputs:
     testResultsFormat: 'XUnit'
     testResultsFiles: 'output/*.xml'
+    mergeTestResults: true
