@@ -18,13 +18,10 @@ steps:
 
 - script: |
     npm install
-    npm install -g allure-commandline --save-dev   
     npm run codeceptjs:allure
   displayName: 'Running tests'
 
 - task: PublishTestResults@2
-  displayName: 'Publish Test Results'
   inputs:
-    testResultsFiles: 'output/*.xml'
-    mergeTestResults: true
-    failTaskOnFailedTests: true    
+    testResultsFiles: '**/*.xml'
+    testResultsFormat: 'JUnit'
