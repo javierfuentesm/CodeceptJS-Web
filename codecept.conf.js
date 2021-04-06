@@ -6,6 +6,9 @@ exports.config = {
 			show: false,
 			browser: 'chromium',
 		},
+		Mochawesome: {
+			uniqueScreenshotNames: 'true',
+		},
 	},
 	include: {
 		I: './steps_file.js',
@@ -14,6 +17,7 @@ exports.config = {
 	mocha: {
 		reporterOptions: {
 			mochaFile: 'output/result.xml',
+			attachments: true, //add screenshot for a failed test
 		},
 	},
 	bootstrap: null,

@@ -10,6 +10,7 @@
         "codeceptjs:ui": "codecept-ui --app",
         "codeceptjs:allure": "npx codeceptjs run --plugins allure",
         "codeceptjs:mocha": "codeceptjs run --reporter mocha-junit-reporter",
+        "codeceptjs:mocha-multi": "npx codeceptjs run --reporter mocha-multi",
         "codeceptjs:reports": "allure serve allure-results"
     },
     "keywords": [],
@@ -19,11 +20,13 @@
         "@codeceptjs/configure": "^0.6.2",
         "@codeceptjs/ui": "^0.4.3",
         "codeceptjs": "^3.0.4",
+        "mocha": "^6.2.3",
         "playwright": "^1.10.0",
         "prettier": "^2.2.1"
     },
     "dependencies": {
         "mocha-junit-reporter": "^1.23.1",
-        "mocha-multi": "^1.1.3"
+        "mocha-multi": "^1.1.3",
+        "mochawesome": "^6.2.2"
     }
 }
