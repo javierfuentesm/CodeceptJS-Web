@@ -18,10 +18,6 @@ steps:
 
 - script: |
     npm install
-    npm i mocha-junit-reporter
-    npm i mochawesome
-    npm i mocha -D
-    npm i mocha-multi
     npm run codeceptjs:mocha-multi
   continueOnError: true
   displayName: 'Running tests'

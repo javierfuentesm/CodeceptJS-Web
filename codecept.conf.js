@@ -16,8 +16,13 @@ exports.config = {
 	},
 	mocha: {
 		reporterOptions: {
-			mochaFile: 'output/result.xml',
-			attachments: true, //add screenshot for a failed test
+			'mocha-junit-reporter': {
+				stdout: './output/console.log',
+				options: {
+					mochaFile: './output/result.xml',
+					attachments: true, //add screenshot for a failed test
+				},
+			},
 		},
 	},
 	bootstrap: null,
