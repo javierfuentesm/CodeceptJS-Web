@@ -18,6 +18,7 @@ steps:
 
 - script: |
     npm install
+    npm i mocha-junit-reporter
     npm run codeceptjs:mocha
   displayName: 'Running tests'
 
