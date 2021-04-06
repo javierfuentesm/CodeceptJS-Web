@@ -26,8 +26,5 @@ steps:
   inputs:
     testResultsFiles: 'output/*.xml'
     testResultsFormat: 'JUnit'
+    publishRunAttachments: true
   continueOnError: true
-- task: PublishTestResultScreenshot@0
-  inputs:
-    organization: 'castillobl'
-    screenshotFolder: '/home/vsts/work/1/s/output/'
