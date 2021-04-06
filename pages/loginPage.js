@@ -5,7 +5,7 @@ class LoginPage {
 		this.username = 'Username'
 		this.password = 'Password'
 		this.button = 'Login'
-		this.text = 'PRODUCTS'
+		this.text = 'PRODUCTssS'
 	}
 
 	fillTheFields(username = 'standard_user', password = 'secret_sauce') {
