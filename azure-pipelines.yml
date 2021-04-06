@@ -23,6 +23,5 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'XUnit'
+    testResultsFormat: 'VSTest'
     testResultsFiles: 'output/*.xml'
-    mergeTestResults: true
