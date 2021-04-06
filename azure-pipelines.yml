@@ -21,7 +21,7 @@ steps:
     npm run codeceptjs:allure
   displayName: 'Running tests'
 
-- task: AllureGenerate@1
+- task: PublishTestResults@2
   inputs:
-    resultsDir: 'output'
-    targetDir: 'allure-report/$(Build.BuildNumber)'
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/*.xml'
