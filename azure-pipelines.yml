@@ -18,7 +18,8 @@ steps:
 
 - script: |
     npm install
-    npm run codeceptjs:allure
+    npm i mocha-junit-reporter
+    npm run codeceptjs:mocha
   displayName: 'Running tests'
 
 - task: PublishTestResults@2
