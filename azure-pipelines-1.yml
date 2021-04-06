@@ -26,6 +26,10 @@ steps:
     npm run codeceptjs:reports
   displayName: 'Generating reports'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(System.DefaultWorkingDirectory)/allure-report/'
+    artifactName: HtmlReport
 - task: publishhtmlreport@1
   inputs:
     htmlType: 'genericHTML'
