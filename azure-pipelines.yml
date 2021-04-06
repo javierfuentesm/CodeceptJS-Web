@@ -31,4 +31,4 @@ steps:
 - task: PublishTestResultScreenshot@0
   inputs:
     organization: 'castillobl'
-    screenshotFolder: './output'
+    screenshotFolder: $(System.DefaultWorkingDirectory)/output/
