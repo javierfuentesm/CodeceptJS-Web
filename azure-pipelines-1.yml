@@ -35,7 +35,3 @@ steps:
   inputs:
     pathToPublish: '$(System.DefaultWorkingDirectory)/allure-report/'
     artifactName: HtmlReport
-- task: publishhtmlreport@1
-  inputs:
-    htmlType: 'genericHTML'
-    htmlPath: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
