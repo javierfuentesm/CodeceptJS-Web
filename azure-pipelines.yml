@@ -18,7 +18,7 @@ steps:
 
 - script: |
     npm install
-    npm run codeceptjs:allure
+    npm run codeceptjs:mocha
   displayName: 'Running tests'
 
 - task: PublishTestResults@2
