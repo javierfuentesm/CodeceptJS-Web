@@ -18,6 +18,7 @@ steps:
 - script: |
     npm install
     npm run codeceptjs:allure
+    npm install -g allure-commandline --save-dev
     npm run codeceptjs:reports
   displayName: 'npm install and build and running tests'
 
