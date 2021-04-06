@@ -35,3 +35,8 @@ steps:
   inputs:
     pathToPublish: '$(System.DefaultWorkingDirectory)/allure-report/'
     artifactName: HtmlReport
+
+- task: AllureGenerate@1
+  inputs:
+    resultsDir: 'output'
+    targetDir: 'allure-report/$(Build.BuildNumber)'
