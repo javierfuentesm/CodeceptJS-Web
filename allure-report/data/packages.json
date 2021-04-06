@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Login",
+    "children" : [ {
+      "name" : "Login with right credentials",
+      "uid" : "618f757670bf3672",
+      "parentUid" : "19e178db3ae5a62d0eab84dca72fd59e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1617720780140,
+        "stop" : 1617720786494,
+        "duration" : 6354
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "19e178db3ae5a62d0eab84dca72fd59e"
+  }, {
+    "name" : "login:",
+    "children" : [ {
+      "name" : "test something",
+      "uid" : "4704507eb4139f00",
+      "parentUid" : "522eb6d364c38578ce6d9ceea8ede5f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617720786663,
+        "stop" : 1617720786665,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "522eb6d364c38578ce6d9ceea8ede5f3"
+  } ]
+}

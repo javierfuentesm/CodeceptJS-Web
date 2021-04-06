@@ -11,7 +11,7 @@
         "codeceptjs:allure": "npx codeceptjs run --plugins allure",
         "codeceptjs:mocha": "codeceptjs run --reporter mocha-junit-reporter",
         "codeceptjs:mocha-multi": "npx codeceptjs run --reporter mocha-multi",
-        "codeceptjs:reports": "allure generate output"
+        "codeceptjs:reports": "allure generate output --clean"
     },
     "keywords": [],
     "author": "",

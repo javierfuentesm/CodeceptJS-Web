@@ -1,0 +1,21 @@
+[ {
+  "uid" : "618f757670bf3672",
+  "name" : "Login with right credentials",
+  "time" : {
+    "start" : 1617720780140,
+    "stop" : 1617720786494,
+    "duration" : 6354
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4704507eb4139f00",
+  "name" : "test something",
+  "time" : {
+    "start" : 1617720786663,
+    "stop" : 1617720786665,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

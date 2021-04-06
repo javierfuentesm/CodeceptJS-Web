@@ -1,0 +1,46 @@
+{
+  "uid" : "4704507eb4139f00",
+  "name" : "test something",
+  "fullName" : "login:.test something",
+  "historyId" : "f7c9091b109682a3077329fb5892f519",
+  "time" : {
+    "start" : 1617720786663,
+    "stop" : 1617720786665,
+    "duration" : 2
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "login:"
+  }, {
+    "name" : "testClass",
+    "value" : "login:"
+  }, {
+    "name" : "testMethod",
+    "value" : "test something"
+  }, {
+    "name" : "package",
+    "value" : "login:"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4704507eb4139f00.json",
+  "parameterValues" : [ ]
+}
