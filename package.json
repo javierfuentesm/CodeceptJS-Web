@@ -9,7 +9,8 @@
         "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
         "codeceptjs:ui": "codecept-ui --app",
         "codeceptjs:allure": "npx codeceptjs run --plugins allure",
-        "codeceptjs:reports": "allure serve output"
+        "codeceptjs:mocha": "codeceptjs run --reporter mocha-junit-reporter",
+        "codeceptjs:reports": "allure serve allure-results"
     },
     "keywords": [],
     "author": "",
@@ -20,5 +21,9 @@
         "codeceptjs": "^3.0.4",
         "playwright": "^1.10.0",
         "prettier": "^2.2.1"
+    },
+    "dependencies": {
+        "mocha-junit-reporter": "^1.23.1",
+        "mocha-multi": "^1.1.3"
     }
 }

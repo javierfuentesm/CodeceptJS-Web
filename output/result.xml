@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.345" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-04-06T05:10:34" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2021-04-06T05:10:34" tests="1" failures="0" time="1.343">
+    <testcase name="Login Login with right credentials" time="1.343" classname="Login with right credentials">
+    </testcase>
+  </testsuite>
+  <testsuite name="login" timestamp="2021-04-06T05:10:37" tests="1" file="/Users/rjfm/WebstormProjects/framework-for-web/login_test.js" failures="0" time="0.002">
+    <testcase name="login: test something" time="0.002" classname="test something">
+    </testcase>
+  </testsuite>
+</testsuites>

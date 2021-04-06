@@ -11,7 +11,11 @@ exports.config = {
 		I: './steps_file.js',
 		loginPage: './pages/loginPage',
 	},
-	mocha: {},
+	mocha: {
+		reporterOptions: {
+			mochaFile: 'output/result.xml',
+		},
+	},
 	bootstrap: null,
 	teardown: null,
 	hooks: [],
