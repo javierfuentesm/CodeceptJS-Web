@@ -3,7 +3,7 @@ exports.config = {
 	helpers: {
 		Playwright: {
 			url: 'https://www.saucedemo.com',
-			show: true,
+			show: false,
 			browser: 'chromium',
 		},
 	},
