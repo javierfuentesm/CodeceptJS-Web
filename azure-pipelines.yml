@@ -20,6 +20,8 @@ steps:
     npm install
     npm i mocha-junit-reporter
     npm run codeceptjs:mocha
+  condition: always() # this step will always run, even if the pipeline is cancelled
+
   displayName: 'Running tests'
 
 - task: PublishTestResults@2
