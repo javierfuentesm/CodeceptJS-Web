@@ -30,4 +30,4 @@ steps:
 - task: PublishTestResultScreenshot@0
   inputs:
     organization: 'castillobl'
-    screenshotFolder: 'output'
+    screenshotFolder: '/home/vsts/work/1/s/output/'
