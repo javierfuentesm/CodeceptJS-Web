@@ -22,6 +22,8 @@ steps:
   displayName: 'Running tests'
 
 - task: PublishTestResults@2
+  displayName: 'Publish Test Results'
   inputs:
-    testResultsFormat: 'VSTest'
     testResultsFiles: 'output/*.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true    
