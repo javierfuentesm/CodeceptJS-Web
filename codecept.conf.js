@@ -49,6 +49,6 @@ exports.config = {
 			screenshotsForAllureReport: true,
 		},
 	},
-	tests: './*_test.js',
+	tests: './tests/*_test.js',
 	name: 'framework-for-web',
 }
