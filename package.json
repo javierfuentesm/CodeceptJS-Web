@@ -5,13 +5,13 @@
 	"main": "index.js",
 	"husky": {
 		"hooks": {
-			"pre-commit": "npx lint-staged"
+			"pre-commit": "lint-staged"
 		}
 	},
 	"lint-staged": {
 		"./src/*.{js,jsx,ts,tsx}": [
 			"npx prettier --write",
-			"eslint src/*.js --fix-dry-run"
+			"eslint **/*.js --fix-dry-run"
 		]
 	},
 	"scripts": {
@@ -41,6 +41,7 @@
 		"prettier": "^2.2.1"
 	},
 	"dependencies": {
+		"eslint-config-airbnb": "^18.2.1",
 		"husky": "^6.0.0",
 		"mocha-junit-reporter": "^1.23.1",
 		"mocha-multi": "^1.1.3",
