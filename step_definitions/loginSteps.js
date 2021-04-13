@@ -1,5 +1,6 @@
 const { I, loginPage } = inject()
 
+
 Given(/^I am in the right page$/, function () {
 	I.amOnPage('/')
 })
