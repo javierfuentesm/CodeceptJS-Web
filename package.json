@@ -3,6 +3,17 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"husky": {
+		"hooks": {
+			"pre-commit": "npx lint-staged"
+		}
+	},
+	"lint-staged": {
+		"./src/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"eslint src/*.js --fix-dry-run"
+		]
+	},
 	"scripts": {
 		"test": "npx codeceptjs run --features --grep '@probando' --plugins allure --verbose",
 		"codeceptjs": "codeceptjs run --steps",
@@ -21,11 +32,16 @@
 		"@codeceptjs/configure": "^0.6.2",
 		"@codeceptjs/ui": "^0.4.3",
 		"codeceptjs": "^3.0.4",
+		"eslint": "^7.24.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-config-prettier": "^8.2.0",
+		"eslint-plugin-import": "^2.22.1",
 		"mocha": "^6.2.3",
 		"playwright": "^1.10.0",
 		"prettier": "^2.2.1"
 	},
 	"dependencies": {
+		"husky": "^6.0.0",
 		"mocha-junit-reporter": "^1.23.1",
 		"mocha-multi": "^1.1.3",
 		"mochawesome": "^6.2.2",
