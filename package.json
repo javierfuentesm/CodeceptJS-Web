@@ -36,6 +36,7 @@
 		"eslint-config-airbnb-base": "^14.2.1",
 		"eslint-config-prettier": "^8.2.0",
 		"eslint-plugin-import": "^2.22.1",
+		"husky": "^4.2.3",
 		"lint-staged": "^10.5.4",
 		"mocha": "^6.2.3",
 		"playwright": "^1.10.0",
@@ -43,7 +44,6 @@
 	},
 	"dependencies": {
 		"eslint-config-airbnb": "^18.2.1",
-		"husky": "^6.0.0",
 		"mocha-junit-reporter": "^1.23.1",
 		"mocha-multi": "^1.1.3",
 		"mochawesome": "^6.2.2",
