@@ -3,17 +3,6 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"./src/*.{js,jsx,ts,tsx}": [
-			"npx prettier --write",
-			"eslint **/*.js --fix-dry-run"
-		]
-	},
 	"scripts": {
 		"test": "npx codeceptjs run --features --grep '@probando' --plugins allure --verbose",
 		"codeceptjs": "codeceptjs run --steps",
@@ -24,6 +13,17 @@
 		"codeceptjs:mocha-multi": "npx codeceptjs run --reporter mocha-multi",
 		"codeceptjs:reports": "allure generate output --clean",
 		"codeceptjs:reports-local": "allure serve output"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"./src/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"eslint **/*.js --fix-dry-run"
+		]
 	},
 	"keywords": [],
 	"author": "",
