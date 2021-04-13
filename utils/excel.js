@@ -6,6 +6,7 @@ const getData = (route) => {
 		header: 1,
 		raw: false,
 	})
+
 	let data = new DataTable(rows[0])
 	rows.shift()
 	rows.forEach((row) => data.add(row))
