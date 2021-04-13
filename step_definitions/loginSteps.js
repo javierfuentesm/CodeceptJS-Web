@@ -1,14 +1,14 @@
+/* eslint-disable no-undef */
 const { I, loginPage } = inject()
 
-
-Given(/^I am in the right page$/, function () {
+Given(/^I am in the right page$/, () => {
 	I.amOnPage('/')
 })
 
-Given(/^I fill my username and password$/, function () {
+Given(/^I fill my username and password$/, () => {
 	loginPage.fillTheFields()
 })
 
-Then(/^I should see the main screen$/, function () {
+Then(/^I should see the main screen$/, () => {
 	loginPage.validateMainScreen()
 })
